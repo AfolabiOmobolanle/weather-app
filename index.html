@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/./cloudy.png" type="image/x-icon">
+    <script src="./index.js" defer></script>
+    <title>weather App</title>
+</head>
+<body>
+   <div class="maincontainer">
+     <div class="container">
+        <h3>Weather App</h3>
+        <div class="top-Container">
+            <div class="asset">
+                <img src="./assets/sun.png" alt="sun">
+            </div>
+            <div class="details">
+                <h1 id="weather"></h1>
+                <h3 class="city"></h3>
+                <h3 id="text"></h3>
+            </div>
+        </div>
+        <div class="bottom-Container">
+            <button>
+                  <h3 id="humidity">00</h3>
+                  <h5>Humidity</h5> 
+            </button>
+            <button>
+                    <h3 id="pressure">00</h3>
+                    <h5>Pressure</h5>
+            </button>
+            <button>
+                    <h3 id="wind-Degree">00</h3>
+                    <h5>Ground level</h5>
+            </button>
+        </div>
+        <div class="userdeets">
+            <input type="text" name="" id="userInput" placeholder="Enter your city."> 
+            <button type="submit" id="enter" onclick="getClimate()"> Search </button>
+
+        </div>
+     </div>
+   </div> 
+</body>
+</html>
